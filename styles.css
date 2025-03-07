@@ -1,0 +1,599 @@
+/* Estilização do Header, Parte das fotos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+.analistas, .evidetes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.analistas a, .evidetes a {
+    display: inline-block;
+}
+
+.topo-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    border: 2px solid #fff; /* Borda branca para destacar */
+    transition: transform 0.3s ease;
+}
+
+.topo-img:hover {
+    transform: scale(1.1); /* Aumenta um pouco a imagem quando passa o mouse */
+}
+
+section {
+    margin-bottom: 10px;
+}
+/* Fim */
+
+
+
+/* Estilo para a barra de busca */
+.barra-de-busca {
+    margin: 30px auto;
+    width: 80%; /* Controla a largura da barra */
+    max-width: 500px; /* Limita o tamanho máximo */
+    text-align: center;
+}
+
+.barra-de-busca input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px; /* Borda arredondada */
+    outline: none; /* Remove o contorno quando selecionado */
+    text-align: center; /* Centraliza o texto do placeholder */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.barra-de-busca input:focus {
+    border-color: #1baf0a; /* Borda azul quando a barra é focada */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Sombra azul */
+}
+
+.barra-de-busca input::placeholder {
+    color: #aaa; /* Cor do texto de placeholder */
+}
+/* Fim */
+
+
+
+/* Estilo para o main do site - Procedimentos - alinhamentos - Novatos e Velhos - ZD e HD */
+/* Estilo para o main e suas seções */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca os itens um abaixo do outro */
+    gap: 80px; /* Espaço entre as seções */
+}
+
+.pocedimento-alinhamento {
+    padding: 0px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Faz com que os botões fiquem um embaixo do outro */
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.novato-velho {
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Alinha as imagens no centro horizontal */
+    gap: 50px; /* Espaço entre os botões */
+}
+
+.novato-velho a {
+    display: flex; /* Garante que o link seja flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do link */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro do link */
+    width: 150px; /* Define a largura do botão circular */
+    height: 150px; /* Define a altura do botão circular */
+    border-radius: 50%; /* Deixa o botão completamente circular */
+    overflow: hidden; /* Garante que nada extrapole o círculo */
+    background-color: #fff; /* Cor de fundo para evitar lacunas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra no botão para destaque */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.novato-velho a:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.icone-novatovelho {
+    width: 100%; /* Garante que a imagem preencha toda a largura do link */
+    height: 100%; /* Garante que a imagem preencha toda a altura do link */
+    object-fit: cover; /* Corta a imagem para se ajustar proporcionalmente ao círculo */
+}
+
+.ferramentas-principais {
+    padding: 0px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Alinha as imagens no centro */
+    gap: 50px; /* Espaço entre as imagens */
+}
+
+.ferramentas-principais a {
+    display: inline-block; /* Garante que o link se comporte como um bloco */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o ícone se encaixe dentro do link */
+    background-color: #fff; /* Adiciona fundo branco para cobrir o fundo transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra no botão para dar destaque */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeitos de transição */
+}
+
+.ferramentas-principais a:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.icone-ferramenta {
+    width: 80px; /* Define o tamanho do ícone */
+    height: 80px; /* Define o tamanho do ícone */
+    object-fit: contain; /* Garante que a imagem se ajuste bem */
+}
+
+button {
+    background-color: #4fad20;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+/* Fim */
+
+
+
+/* Estilo para o Título */
+.titulo {
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Fonte Comic Sans */
+    font-weight: bold; /* Negrito */
+    font-size: 25px;
+    color: rgb(255, 255, 255); /* Cor preta */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento interno */
+    line-height: 1.2; /* Ajuste o espaçamento entre as linhas */
+    text-align: center; /* Alinha o texto horizontalmente */
+    display: flex; /* Usa o modelo de layout flexbox */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    height: 290px; /* Altura fixa para o título */
+    width: 100%; /* Garante que o título ocupe toda a largura da tela */
+    position: relative; /* Posicionamento normal */
+    margin-bottom: 10px; /* Espaço de 20px abaixo do título */
+}
+
+/* Especificação para o título em h1 */
+.titulo h1 {
+    margin: 0; /* Remove margens */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* Estilo para a parte lateral esquerda */
+/* Estilo para o menu lateral */
+.menu-lateral {
+    background-color: #1a3d4d; /* Cor de fundo do menu lateral */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Padding para espaçar os itens dentro do menu */
+    width: 350px; /* Largura fixa do menu lateral */
+    position: absolute; /* Para garantir que fique na lateral */
+    top: 250px; /* Ajusta a posição do menu abaixo do título */
+    left: 0;
+    height: calc(100% - 120px); /* Preenche a altura do restante da página */
+    box-sizing: border-box; /* Para incluir o padding no tamanho total da largura */
+}
+.aside-esquerdo {
+    position: fixed; /* Usar position absolute para colocar o menu lateral no topo */
+    top: 0px; /* Ajuste para garantir que a área lateral comece abaixo do título */
+    left: 0; /* Alinha o conteúdo à esquerda */
+    padding: 0; /* Remove o padding */
+    height: 100%; /* Ajusta a altura para ocupar o restante da tela abaixo do título */
+    width: 350px; /* Largura do menu lateral */
+    background-color: #1a3d4d; /* Cor de fundo do menu lateral */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo do menu de links */
+.menu-lateral ul {
+    list-style-type: none; /* Remove os pontos de lista */
+    padding: 0;
+    margin: 0; /* Remove qualquer margem */
+}
+
+.menu-lateral li {
+    margin: 15px 0; /* Espaçamento entre os itens do menu */
+}
+
+.menu-lateral a {
+    display: flex; /* Flexbox para colocar ícones e texto lado a lado */
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    color: white; /* Cor do texto */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Fonte Comic Sans */
+    font-size: 18px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição */
+    margin-left: 15px; /* Ajusta o espaçamento do texto com relação ao ícone */
+    padding: 5px 10px; /* Padding para dar mais espaçamento interno */
+    border-radius: 5px; /* Arredondamento dos cantos */
+}
+
+/* Quando passar o mouse sobre o link */
+.menu-lateral a:hover {
+    background-color: #d1f97b; /* Cor de fundo quando passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Estilo dos ícones do menu */
+.icone-menu {
+    width: 25px; /* Largura do ícone */
+    height: 25px; /* Altura do ícone */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    object-fit: cover; /* Garante que a imagem do ícone se ajuste corretamente */
+}
+
+/*estilo para o título n ficar roxo*/
+.titulo a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Define a cor do link */
+}
+
+.titulo a:visited {
+    color: black; /* Mantém a cor preta após o clique */
+}
+
+.titulo a:hover {
+    color: #4fad20; /* Define uma cor ao passar o mouse, opcional */
+    transition: color 0.3s ease;
+}
+/* Fim */
+
+
+
+/* Estilo do card de NPS */
+.top-nps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.nps-card {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nps-card:hover {
+    transform: scale(1.05);
+}
+
+/* Foto do colaborador com efeito de borda */
+.nps-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    margin-bottom: 10px;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito da borda com carregamento */
+.nps-card:hover .nps-img {
+    animation: loading-border 7s forwards; /* Aplica a animação ao passar o mouse */
+}
+
+/* Animação da borda, criando um efeito de carregamento */
+@keyframes loading-border {
+    0% {
+        border-color: transparent;
+        box-shadow: none;
+    }
+    25% {
+        border-color: #48ff00;
+        box-shadow: 0 0 5px rgb(249, 253, 0);
+    }
+    50% {
+        border-color: #ffffff;
+        box-shadow: 0 0 10px rgb(249, 253, 0);
+    }
+    75% {
+        border-color: #48ff00;
+        box-shadow: 0 0 15px rgb(249, 253, 0);
+    }
+    100% {
+        border-color: #48ff00;
+        box-shadow: 0 0 20px rgb(249, 253, 0);
+    }
+}
+
+/* Efeito da borda com carregamento da direita para a esquerda */
+.nps-card:hover .nps-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 4px solid #48ff00; /* Cor da borda */
+    border-radius: 50%; /* Mantém a borda redonda */
+    animation: loading-border-right 5s forwards; /* Animação de carregamento da direita para a esquerda */
+}
+
+/* Animação da borda, criando um efeito de carregamento da direita para a esquerda */
+@keyframes loading-border-right {
+    0% {
+        right: 0;
+        left: 100%;
+    }
+    100% {
+        right: 0;
+        left: 0;
+    }
+}
+
+/* Estilo para o texto do NPS */
+.nps-score {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #3a941e; /* Cor verde militar */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Fim */
+
+
+
+
+/* Estilo do carousel da barra direita*/
+/* Estilo para a lateral direita */
+.aside-direito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Container do carrossel */
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transition: transform 1s ease-in-out; /* Transição suave */
+}
+
+/* Estilo dos cards */
+.nps-card {
+    min-width: 300px; /* Largura fixa para os cards */
+    margin-right: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nps-card:hover {
+    transform: scale(1.05);
+}
+
+/* Foto do colaborador com efeito de borda */
+.nps-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Estilo para o texto do NPS */
+.nps-score {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #3a941e; /* Cor verde militar */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo para a imagem quadrada */
+.nps-img-square {
+    width: 250px; /* Você pode ajustar o tamanho aqui */
+    height: 250px; /* Tamanho igual à largura para ser quadrada */
+    object-fit: cover; /* Faz a imagem cobrir completamente a área, mantendo a proporção */
+    border-radius: 8px; /* Adiciona borda arredondada se desejar */
+    transition: transform 0.3s ease; /* Transição suave caso queira efeitos de hover */
+}
+
+/* Efeito de hover (opcional) */
+.nps-img-square:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho da imagem ao passar o mouse */
+}
+/* Fim */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo da página Arquivos de texto */
+
+/* Contêiner para garantir que a gaveta esteja dentro da área central */
+.container-gaveta {
+    max-width: calc(100% - 710px); /* Subtrai a largura das barras laterais */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 0 20px; /* Adiciona um espaçamento à direita e à esquerda */
+}
+
+/* Estilo para a gaveta */
+.gaveta {
+    background-color: #f9f9f9; /* Cor de fundo da gaveta */
+    border: 1px solid #ddd; /* Borda da gaveta */
+    border-radius: 8px;
+    margin: 15px 0; /* Espaçamento entre as gavetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px;
+    overflow: hidden; /* Garante que o conteúdo não extrapole a gaveta */
+    max-height: 45px; /* Começa com altura zero (fechada) */
+    transition: max-height 0.3s ease-out; /* Transição suave ao abrir */
+}
+
+/* Estilo do título da gaveta */
+.gaveta .gaveta-titulo {
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Fonte Comic Sans */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 18px;
+    color: #333; /* Cor do texto */
+    cursor: pointer; /* Deixa o cursor como "pointer" para indicar que é clicável */
+    margin: 0; /* Remove margens */
+    padding: 10px;
+    background-color: #e0e0e0; /* Cor de fundo do título */
+    border-radius: 5px; /* Borda arredondada no título */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo do conteúdo dentro da gaveta */
+.gaveta .gaveta-conteudo {
+    padding: 10px;
+    font-size: 16px;
+    color: #555; /* Cor do texto do conteúdo */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    max-height: 400px; /* Define uma altura máxima para o conteúdo */
+    overflow-y: auto; /* Adiciona a rolagem vertical quando o conteúdo exceder a altura */
+}
+
+/* Quando a gaveta estiver aberta */
+.gaveta.aberta {
+    max-height: 500px; /* Altura máxima da gaveta quando aberta (ajustável conforme o conteúdo) */
+    padding: 15px; /* Aumenta o padding quando a gaveta abre */
+}
+
+/* Estilo para o efeito de hover no título da gaveta */
+.gaveta .gaveta-titulo:hover {
+    background-color: #ccc; /* Muda a cor de fundo ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
