@@ -1,153 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atendimento CCX</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento CCX</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Analistas para slack -->
-        <section class="analistas">
-            <a href="https://picpay.enterprise.slack.com/archives/D05J2NS7M0D" target="_blank">
-                <img src="Imagens-ccx/Geisa.jpg" alt="Foto de Geisa" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D05Q3BHK5B6" target="_blank">
-                <img src="Imagens-ccx/Jorge.jpg" alt="Foto de Jorge" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D024TMHB895" target="_blank">
-                <img src="Imagens-ccx/Falqueto.jpg" alt="Foto de Falqueto" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D06M1GV0VRQ" target="_blank">
-                <img src="Imagens-ccx/Davi.jpg" alt="Foto de Davi" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D01U1TTATHQ" target="_blank">
-                <img src="Imagens-ccx/Fabio.jpg" alt="Foto de Fabio" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D079QCJ4318" target="_blank">
-                <img src="Imagens-ccx/Manu.jpg" alt="Foto de Manu" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D06C10UAXJL" target="_blank">
-                <img src="Imagens-ccx/Breno.jpg" alt="Foto de Breno" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D06VADSUEF3" target="_blank">
-                <img src="Imagens-ccx/Julia.jpg" alt="Foto de Julia" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D06QYGW9SK1" target="_blank">
-                <img src="Imagens-ccx/Mamedes.png" alt="Foto de Mamedes" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D04BMKUB8F8" target="_blank">
-                <img src="Imagens-ccx/Pedro.jpg" alt="Foto de Pedro" class="topo-img"></a>
-        </section>
-        
-        <section class="evidetes">
-            <a href="https://picpay.enterprise.slack.com/archives/D06BF8769NY" target="_blank">
-                <img src="Imagens-ccx/Igor.jpg" alt="Foto do Igor" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D061JSKT630" target="_blank">
-                <img src="Imagens-ccx/Gut.jpg" alt="Foto de Gut" class="topo-img"></a>
-            <a href="https://picpay.enterprise.slack.com/archives/D0608KWP5FT" target="_blank">
-                <img src="Imagens-ccx/JoséRenato.jpg" alt="Foto de Joserenato" class="topo-img"></a>
-        </section>
-           <!-- Barra de busca -->
-           <section class="barra-de-busca">
-            <input type="text" id="busca" placeholder="Buscar" oninput="buscarPalavra()">
-        </section>
-    </header>
-    
-    <!-- Lateral esquerda -->
-    <div class="aside-esquerdo">
-        <!-- Título -->
-        <div class="titulo">
-            <a href="index.html"><h1>Atendimento CCX</h1></a>
-        </div>        
-        <!-- Menu lateral -->
-        <nav class="menu-lateral">
-            <ul>
-                <li><a href="arquivosdetexto.html">Arquivos de texto</a></li>
-                <li><a href="#">Planilhas, dashboards e forms</a></li>
-                <li><a href="#">Evidências</a></li>
-                <li><a href="#">Treinamento</a></li>
-                <li><a href="https://www.ph3a.com.br/crm" target="_blank">PH3A</a></li>
-                <li><a href="#">Procob</a></li>
-                <li><a href="https://picpay-principal.cloud.databricks.com/login.html" target="_blank">DataBricks</a></li>
-                <li><a href="https://www.asaas.com/dashboard/index" target="_blank">Asaas</a></li>
-                <li><a href="https://portal.holdbrasil.com.br/Autenticacao/Login" target="_blank">HoldBrasil</a></li>
-                <li><a href="https://picpay.blip.ai/application" target="_blank">Blip</a></li>
-            </ul>
-        </nav>
-    </div>
-   <!-- Lateral direita -->
-    <aside class="aside-direito">
-        <div class="top-nps">
-            <!-- Container para os cards do NPS -->
-            <div class="carousel">
-                <div class="nps-card">
-                    <img src="Imagens-ccx/Fabio.jpg" alt="Foto de Fabio" class="nps-img">
-                    <h3>Top NPS da Semana</h3>
-                    <p class="nps-score">18</p>
-                </div>
-        
-                <!-- Card com imagem -->
-                <div class="nps-card">
-                    <img src="Icones-ccx/zoardavi.jpg" alt="Foto de outro colaborador" class="nps-img-square">
-                    <h3>Taylor loves Kanye</h3>
-                    <p class="nps-score">Davi love's too</p>
-                </div>
-        
-                <!-- Card com link e descrição -->
-                <div class="nps-card">
-                    <a href="https://www.calendarr.com/brasil/contagem-regressiva/natal/" target="_blank">
-                        <h3>Veja mais detalhes</h3>
-                        <p class="nps-score">Logo mais já é natal!</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Corpo do site -->
-    <section class="gaveta-container">
-        <div class="container-gaveta">
-            <div class="gaveta">
-                <!-- Título da gaveta (que ficará em negrito e com a fonte Comic Sans) -->
-                <button class="gaveta-titulo">Explicando débito</button>
-                <!-- Conteúdo da gaveta (inicialmente escondido) -->
-                <div class="gaveta-conteudo">
-                    <p>O valor de R$ XXX foi capturado, pois conforme nossos Termos de Uso, o saldo em carteira pode ser utilizado para cobrir o débito em questão.</p>             
-                </div>
-            </div>
-
-            <div class="gaveta">
-                <button class="gaveta-titulo">Valor creditado/devolvido na carteira</button>
-                <div class="gaveta-conteudo">
-                    <p>Sobre o valor de R$ XXX que foi descontado do seu saldo, o time responsável tem até 4 dias úteis para a análise de reembolso.</p>
-                    <p>Pedimos que aguarde o prazo solicitado e o retorno do setor responsável.</p>
-                </div>
-            </div>
-            
-            <div class="gaveta">
-                <button class="gaveta-titulo">Orientações de uso</button>
-                <div class="gaveta-conteudo">
-                    <p>A conta PicPay possui caráter estritamente pessoal, ou seja, o titular da conta é responsável por todas as transações realizadas, recebidas, assim como dados e cartões de crédito cadastrados. Visto que o pagamento foi realizado em sua conta no aplicativo e sem qualquer indícios de erro, você é o único e exclusivo responsável.<p>
-                    <p>Lembrando também que, conforme nossos Termos de uso, a criação e utilização da conta é pessoal e intransferível, bem como a veracidade dos dados fornecidos durante o cadastro.</p>
-                    <p>Nós orientamos ainda, que não permita a utilização do seu aplicativo nem mesmo por amigos próximos, familiares e conhecidos.</p>
-                </div>
-            </div>
-
-            <div class="gaveta">
-                <button class="gaveta-titulo">Retirada de saldo - Block 98</button>
-                <div class="gaveta-conteudo">
-                    <p>Olá, XXXX<p>
-                        <p>Não se preocupe, você poderá fazer a retirada do seu saldo acessando seu aplicativo e seguindo os seguintes passos.
-                        <p>Acesse sua “Carteira”, vá em “Transferir/Sacar Dinheiro” e escolha a melhor opção para você.</p>                            
-                        <p>Esperamos ter auxiliado em suas dúvidas.</p>
-                        <p>Qualquer dúvida, estou à disposição.</p>
-                </div>
-            </div>
-        </div>
-            
-        </div>
+  <header>
+    <!-- Analistas para slack -->
+    <section class="analistas">
+      <a href="https://picpay.enterprise.slack.com/archives/D05J2NS7M0D" target="_blank">
+        <img src="Imagens-ccx/Geisa.jpg" alt="Foto de Geisa" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D05Q3BHK5B6" target="_blank">
+        <img src="Imagens-ccx/Jorge.jpg" alt="Foto de Jorge" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D024TMHB895" target="_blank">
+        <img src="Imagens-ccx/Falqueto.jpg" alt="Foto de Falqueto" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D06M1GV0VRQ" target="_blank">
+        <img src="Imagens-ccx/Davi.jpg" alt="Foto de Davi" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D01U1TTATHQ" target="_blank">
+        <img src="Imagens-ccx/Fabio.jpg" alt="Foto de Fabio" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D079QCJ4318" target="_blank">
+        <img src="Imagens-ccx/Manu.jpg" alt="Foto de Manu" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D06C10UAXJL" target="_blank">
+        <img src="Imagens-ccx/Breno.jpg" alt="Foto de Breno" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D06VADSUEF3" target="_blank">
+        <img src="Imagens-ccx/Julia.jpg" alt="Foto de Julia" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D06QYGW9SK1" target="_blank">
+        <img src="Imagens-ccx/Mamedes.png" alt="Foto de Mamedes" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D04BMKUB8F8" target="_blank">
+        <img src="Imagens-ccx/Pedro.jpg" alt="Foto de Pedro" class="topo-img">
+      </a>
     </section>
     
+    <section class="evidetes">
+      <a href="https://picpay.enterprise.slack.com/archives/D06BF8769NY" target="_blank">
+        <img src="Imagens-ccx/Igor.jpg" alt="Foto do Igor" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D061JSKT630" target="_blank">
+        <img src="Imagens-ccx/Gut.jpg" alt="Foto de Gut" class="topo-img">
+      </a>
+      <a href="https://picpay.enterprise.slack.com/archives/D0608KWP5FT" target="_blank">
+        <img src="Imagens-ccx/JoséRenato.jpg" alt="Foto de Joserenato" class="topo-img">
+      </a>
+    </section>
     
-    
-    
-    <footer>
-        <!-- Rodapé, se houver -->
-    </footer>
-
-    <script src="script.js"></script>
+    <!-- Barra de busca -->
+    <section class="barra-de-busca">
+      <input type="text" id="busca" placeholder="Buscar">
+    </section>
+  </header>
+  
+  <!-- Lateral esquerda -->
+  <div class="aside-esquerdo">
+    <!-- Título -->
+    <div class="titulo">
+      <a href="index.html"><h1>Atendimento CCX</h1></a>
+    </div>
+    <!-- Menu lateral -->
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="arquivosdetexto.html">Arquivos de texto</a></li>
+        <li><a href="#">Planilhas, dashboards e forms</a></li>
+        <li><a href="#">Evidências</a></li>
+        <li><a href="#">Treinamento</a></li>
+        <li><a href="https://www.ph3a.com.br/crm" target="_blank">PH3A</a></li>
+        <li><a href="#">Procob</a></li>
+        <li><a href="https://picpay-principal.cloud.databricks.com/login.html" target="_blank">DataBricks</a></li>
+        <li><a href="https://www.asaas.com/dashboard/index" target="_blank">Asaas</a></li>
+        <li><a href="https://portal.holdbrasil.com.br/Autenticacao/Login" target="_blank">HoldBrasil</a></li>
+        <li><a href="https://picpay.blip.ai/application" target="_blank">Blip</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Lateral direita -->
+  <aside class="aside-direito">
+    <div class="top-nps">
+      <!-- Container para os cards do NPS -->
+      <div class="carousel">
+        <div class="nps-card">
+          <img src="Imagens-ccx/Fabio.jpg" alt="Foto de Fabio" class="nps-img">
+          <h3>Top NPS da Semana</h3>
+          <p class="nps-score">18</p>
+        </div>
+        <!-- Card com imagem -->
+        <div class="nps-card">
+          <img src="Icones-ccx/zoardavi.jpg" alt="Foto de outro colaborador" class="nps-img-square">
+          <h3>Taylor loves Kanye</h3>
+          <p class="nps-score">Davi love's too</p>
+        </div>
+        <!-- Card com link e descrição -->
+        <div class="nps-card">
+          <a href="https://www.calendarr.com/brasil/contagem-regressiva/natal/" target="_blank">
+            <h3>Veja mais detalhes</h3>
+            <p class="nps-score">Logo mais já é natal!</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  
+  <!-- Corpo do site -->
+  <section class="gaveta-container">
+    <div class="container-gaveta">
+      <!-- Outras gavetas de exemplo omitidas para brevidade -->
+      
+      <!-- Gaveta com o formulário para atualizar boleto -->
+      <div class="gaveta">
+        <button class="gaveta-titulo">Arquivo de texto</button>
+        <div class="gaveta-conteudo">
+          <p>Partiu atualizar um boleto?</p>
+          <p>Para atualizar o boleto, preencha os seguintes campos:</p>
+          
+          <label>
+            Valor atual: R$ 
+            <input type="number" id="valor_atual" step="0.01" placeholder="Ex: 1000.00">
+          </label>
+          <br>
+          
+          <label>
+            Débito no valor de: R$ 
+            <input type="number" id="debito_valor" step="0.01" placeholder="Ex: 50.00">
+          </label>
+          <br>
+          
+          <label>
+            Data do vencimento: 
+            <input type="text" id="data_vencimento" placeholder="dd/mm/aaaa">
+          </label>
+          <br>
+          
+          <label>
+            Data de hoje: 
+            <input type="text" id="data_hoje" placeholder="dd/mm/aaaa">
+          </label>
+          <br>
+          
+          <label>
+            Valor do CBK atualizado: R$ 
+            <input type="text" id="cbk_atualizado" readonly>
+          </label>
+          <br>
+          
+          <button onclick="calcularCBK()">Calcular CBK</button>
+        </div>
+      </div>
+      
+      <!-- Container para exibir os resultados (este container será incluído na busca) -->
+      <div id="resultadoContainer">
+        <!-- As mensagens serão geradas dinamicamente -->
+      </div>
+      
+      <!-- Outras gavetas de exemplo omitidas -->
+    </div>
+  </section>
+  
+  <footer>
+    <!-- Rodapé, se houver -->
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>

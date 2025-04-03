@@ -520,9 +520,17 @@ button {
 
 
 
+.highlight-term {
+    background-color: yellow;
+    /* Se quiser manter o sublinhado, pode deixar text-decoration: underline; */
+    text-decoration: underline;
+  }
 
-
-
+  .highlight-term {
+    background-color: yellow;
+    text-decoration: underline;
+  }
+  
 
 
 
